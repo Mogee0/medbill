@@ -7,9 +7,9 @@ const upiIdSpan = document.getElementById('upi-id');
 const amountInput = document.getElementById('amount');
 
 // Get environment variables (replace with your actual values or a server-side solution)
-const googleSheetURL = `https://docs.google.com/spreadsheets/d/${'YOUR_GOOGLE_SHEET_ID_HERE'}/pubhtml`; // Replace!
-const gpayQRURL = 'YOUR_GPAY_QR_CODE_URL_HERE'; // Replace!
-const upiID = 'YOUR_UPI_ID_HERE'; // Replace!
+const googleSheetURL = `https://docs.google.com/spreadsheets/d/${'https://docs.google.com/spreadsheets/d/1Joiu_Wk9g17IpUDb5q9j6Tz-qXaDDLu612Bq5OVnjpg/edit?usp=sharing'}/pubhtml`; // Replace!
+const gpayQRURL = 'https://drive.google.com/file/d/1w0MZTkXgXXZK0z7ZYSxQhnYffg_Qsmjt/view?usp=drive_link'; // Replace!
+const upiID = 'vmtamilnadu1@okicici'; // Replace!
 
 function handleLogin() {
     const email = document.getElementById('email').value;
