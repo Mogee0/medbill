@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A MedBill</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div id="login-section">
+                <h2>A MedBill Login</h2>
+                <img src="assets/health_icon.png" alt="Health Icon" class="icon">
+                <p>Secure healthcare billing and patient management.</p>
+                <input type="email" id="email" placeholder="Enter your email">
+                <input type="password" id="password" placeholder="Enter your password">
+                <button onclick="handleLogin()">Login</button>
+            </div>
+
+            <div id="dashboard-section" style="display: none;">  <h2>Dashboard</h2>
+                <p>Welcome, <span id="welcome-message"></span></p>
+
+                <h3>Patient Records</h3>
+                <iframe id="patient-records" src="" width="100%" height="200px"></iframe>
+
+                <h3>Payment</h3>
+                <p>Scan to Pay</p>
+                <img id="gpay-qr" src="" alt="GPay QR Code" class="qr-code">
+                <p>UPI ID: <span id="upi-id"></span></p>
+                <input type="number" id="amount" placeholder="Enter amount">
+                <button onclick="handlePayment()">Pay Now</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

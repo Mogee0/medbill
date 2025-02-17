@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, blue, green); /* Example gradient */
+    margin: 0; /* Remove default body margin */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/* ... other styles ... */
+.qr-code {
+    width: 150px;
+    height: 150px;
+    margin: 10px auto; /* Center the QR code */
+}
+
+/* Style for the iframe (patient records) */
+#patient-records {
+    border: 1px solid #ccc; /* Add a border */
+}
