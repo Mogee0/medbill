@@ -1,4 +1,6 @@
-const loginSection = document.getElementById('login-section');
+const container = document.querySelector('.container');
+const registerBtn = document.querySelector('.register-btn');
+const loginBtn = document.querySelector('.login-btn');
 const dashboardSection = document.getElementById('dashboard-section');
 const welcomeMessage = document.getElementById('welcome-message');
 const patientRecords = document.getElementById('patient-records');
@@ -11,20 +13,14 @@ const googleSheetURL = `https://docs.google.com/spreadsheets/d/${'https://docs.g
 const gpayQRURL = 'https://drive.google.com/file/d/1w0MZTkXgXXZK0z7ZYSxQhnYffg_Qsmjt/view?usp=drive_link'; // Replace!
 const upiID = 'vmtamilnadu1@okicici'; // Replace!
 
-function handleLogin() {
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value; // In a real app, you would never store or transmit passwords like this.
 
-    if (email.trim() !== "") {
-        loginSection.style.display = 'none';
-        dashboardSection.style.display = 'block';
-        welcomeMessage.textContent = email; // Or get the name from a database
-        patientRecords.src = googleSheetURL;
-        gpayQR.src = gpayQRURL;
-        upiIdSpan.textContent = upiID;
-    } else {
-        alert("Please enter a valid email");
-    }
+registerBtn.addEventListener('click', () => {
+    container.classList.add('active');
+})
+
+loginBtn.addEventListener('click', () => {
+    container.classList.remove('active');
+})
 }
 
 function handlePayment() {
