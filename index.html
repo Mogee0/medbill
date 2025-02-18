@@ -25,6 +25,17 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js">window.onload = function() {
+    if (localStorage.getItem("userLoggedIn") === "true") {
+        document.getElementById("loginLink").innerText = "Logout";
+        document.getElementById("loginLink").href = "#";
+        document.getElementById("loginLink").addEventListener("click", function() {
+            localStorage.removeItem("userLoggedIn");
+            alert("Logged out!");
+            window.location.href = "login.html";
+        });
+    }
+};
+</script>
 </body>
 </html>
